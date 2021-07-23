@@ -1,0 +1,140 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch PracticeMethodCh3",
+            "request": "launch",
+            "mainClass": "PracticeMethodCh3",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arrays",
+            "request": "launch",
+            "mainClass": "Arrays",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalArea",
+            "request": "launch",
+            "mainClass": "CalArea",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalLogArea",
+            "request": "launch",
+            "mainClass": "CalLogArea",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalSum",
+            "request": "launch",
+            "mainClass": "CalSum",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalWithLoops",
+            "request": "launch",
+            "mainClass": "CalWithLoops",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExplicitTypeCasting",
+            "request": "launch",
+            "mainClass": "ExplicitTypeCasting",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch FifthProgram",
+            "request": "launch",
+            "mainClass": "FifthProgram",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch ForLoops",
+            "request": "launch",
+            "mainClass": "ForLoops",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch Incrementors",
+            "request": "launch",
+            "mainClass": "Incrementors",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch MetricLength",
+            "request": "launch",
+            "mainClass": "MetricLength",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch Println",
+            "request": "launch",
+            "mainClass": "Println",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch Problem44",
+            "request": "launch",
+            "mainClass": "Problem44",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadingCode",
+            "request": "launch",
+            "mainClass": "ReadingCode",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScannerWithLoop",
+            "request": "launch",
+            "mainClass": "ScannerWithLoop",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShawnsStuff",
+            "request": "launch",
+            "mainClass": "ShawnsStuff",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringConcatenation",
+            "request": "launch",
+            "mainClass": "StringConcatenation",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch TempConversions",
+            "request": "launch",
+            "mainClass": "TempConversions",
+            "projectName": "helloworld_7fa07f23"
+        }
+    ]
+}
