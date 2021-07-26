@@ -1,7 +1,7 @@
 /**
  * Author: Stephanie Scott
  *
- * Name: Program to calculate a monthly mortgage payment
+ * Description: Program to calculate a monthly mortgage payment
  * assuming that the intrest rate is compounded monthly
  *
  * Date: 7/26/21
