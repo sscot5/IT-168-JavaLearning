@@ -62,12 +62,12 @@ public class Mortgage
             printOverPayment(overPayment);
 
             //print the overpayment as a percentage (in percent notation) of the mortgage amount
+            double percentOver = overPayment / m;
+            printPercentOverPayment(percentOver);
         }
         catch(Exception nope){
             log("Nope. Try again.");
         }
-            
-            
     }   
     
     public static double getAnnualIntrestRate(){
@@ -108,6 +108,9 @@ public class Mortgage
         log("Your overpayment is " + pricePattern.format(overPayment));
     }
 
+    public static void printPercentOverPayment(double percentOver){
+        log("Your payment is " + percentPattern.format(percentOver) + " over your principle investment.");
+    }
     public static void log(String msg)
     {
         System.out.println(msg);
