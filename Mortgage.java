@@ -11,19 +11,10 @@
  * where mIR = monthly interest rate = annual interest rate / 12
  * nOY= number of years
  * M = mortgage amount
- * 
- * output a summary of the mortgage problem as follows:
- * 
- * the total payment over the years, with only two significant digits after the decimal point
- * 
- * the overpayment, i.e., the difference between the total payment over the years and the mortgage amount, with only two significant digits after the decimal point
- * 
- * the overpayment as a percentage (in percent notation) of the mortgage amount
  */
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
-//import java.text.NumberFormat;
 
 public class Mortgage 
 {
@@ -38,14 +29,14 @@ public class Mortgage
             //prompt the user for a double representing the annual interest rate. For example, 3.5% would be entered as .035
             double annualIntrestRate = getAnnualIntrestRate();
             
-            //print the annual interest rate in percent notation
-            printIntrestRate(annualIntrestRate);
-            
             //prompt the user for the number of years the mortgage will be held (typical input here is 10, 15, or 30)
             double yearsOfMortgage = getYearsOfMortgage();
             
             //prompt the user for a number representing the mortgage amount borrowed from the bank
             double amountBorrowed = getAmountBorrowed();
+            
+            //print the annual interest rate in percent notation
+            printIntrestRate(annualIntrestRate);
             
             //print the mortgage amount in dollars
             printMortgageAmount(amountBorrowed);
@@ -60,6 +51,17 @@ public class Mortgage
             
             //print the monthly payment in dollars, with only two significant digits after the decimal point
             printMonthlyPayment(monthlyPayment);
+            
+            //print the total payment over the years, with only two significant digits after the decimal point
+            double total = (monthlyPayment * 12) * nOY;
+            printTotal(total);
+
+            //print the overpayment, i.e., the difference between the total payment over the years and the mortgage amount
+            //with only two significant digits after the decimal point
+            double overPayment = total - m;
+            printOverPayment(overPayment);
+
+            //print the overpayment as a percentage (in percent notation) of the mortgage amount
         }
         catch(Exception nope){
             log("Nope. Try again.");
@@ -96,6 +98,14 @@ public class Mortgage
 
     public static void printMonthlyPayment(double monthlyPayment){
         log("Your monthly mortgage payment is " + pricePattern.format(monthlyPayment));
+    }
+
+    public static void printTotal(double total){
+        log("Your total mortage is " + pricePattern.format(total));
+    }
+
+    public static void printOverPayment(double overPayment){
+        log("Your overpayment is " + pricePattern.format(overPayment));
     }
 
     public static void log(String msg)
