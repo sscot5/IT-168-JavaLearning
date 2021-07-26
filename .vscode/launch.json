@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Mortgage",
+            "request": "launch",
+            "mainClass": "Mortgage",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch MetricWeight",
+            "request": "launch",
+            "mainClass": "MetricWeight",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch PracticeMethodCh3",
             "request": "launch",
             "mainClass": "PracticeMethodCh3",
