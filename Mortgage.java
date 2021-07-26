@@ -18,9 +18,9 @@ import java.util.Scanner;
 
 public class Mortgage 
 {
-    public static Scanner scanner = new Scanner(System.in);
-    public static DecimalFormat percentPattern = new DecimalFormat("0.0#%");
-    public static DecimalFormat pricePattern = new DecimalFormat("$0,000.00");
+    private static Scanner scanner = new Scanner(System.in);
+    private static DecimalFormat percentPattern = new DecimalFormat("0.0#%");
+    private static DecimalFormat pricePattern = new DecimalFormat("$0,000.00");
     
     public static void main(String[] args)
     {
@@ -111,6 +111,7 @@ public class Mortgage
     public static void printPercentOverPayment(double percentOver){
         log("Your payment is " + percentPattern.format(percentOver) + " over your principle investment.");
     }
+
     public static void log(String msg)
     {
         System.out.println(msg);
