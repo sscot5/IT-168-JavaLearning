@@ -20,4 +20,3 @@ public class MetricWeight {
     }
 
 }
-//Have Shawn look at the calculations are slightly off in the decimals

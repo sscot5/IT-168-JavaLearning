@@ -20,12 +20,11 @@ public class Mortgage
     public static void main(String[] args)
     {
 //prompt the user for a double representing the annual interest rate. For example, 3.5% would be entered as .035
-        String annualIntrestRate = getAnnualIntrestRate();
-        //must use wrapper because this will be a String need double
+        double annualIntrestRate = getAnnualIntrestRate();
         //need to use decimal conversion
 
 //prompt the user for the number of years the mortgage will be held (typical input here is 10, 15, or 30)
-        String yearsOfMortgage = getYearsOfMortgage();
+        int yearsOfMortgage = getYearsOfMortgage();
         //must use wrapper as this will return a string and need int
 
 //prompt the user for a number representing the mortgage amount borrowed from the bank
@@ -47,15 +46,15 @@ public class Mortgage
 //the overpayment as a percentage (in percent notation) of the mortgage amount
     }   
     
-    public static String getAnnualIntrestRate(){
+    public static double getAnnualIntrestRate(){
         log("What is your annual intrest rate as a decimal?");
-        String annualInrestRate = scanner.nextLine();
+        double annualInrestRate = scanner.nextDouble();
         return annualInrestRate;
     }
 
-    public static String getYearsOfMortgage(){
+    public static int getYearsOfMortgage(){
         log("Is your mortgage a 10, 15, or 30 year mortgage?");
-        String yearsOfMortgage = scanner.nextLine();
+        int yearsOfMortgage = scanner.nextInt();
         return yearsOfMortgage;
     }
 
