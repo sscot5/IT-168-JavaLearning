@@ -21,15 +21,22 @@ public class Mortgage
     {
 //prompt the user for a double representing the annual interest rate. For example, 3.5% would be entered as .035
         double annualIntrestRate = getAnnualIntrestRate();
+        double mIR = annualIntrestRate / 12;
+
         //need to use decimal conversion
 
 //prompt the user for the number of years the mortgage will be held (typical input here is 10, 15, or 30)
-        int yearsOfMortgage = getYearsOfMortgage();
-        //must use wrapper as this will return a string and need int
+        double yearsOfMortgage = getYearsOfMortgage();
+        double nOY = yearsOfMortgage;
 
 //prompt the user for a number representing the mortgage amount borrowed from the bank
-        String amountBorrowed = getAmountBorrowed();
-        //again need wrapper
+        double amountBorrowed = getAmountBorrowed();
+        double m = amountBorrowed;
+        double x = 1 + mIR;
+        double y = 12 * nOY;
+        double z = Math.pow(x, y);
+        double monthlyPayment = (mIR * m) / (1 - (1 / (z)));
+        log("Your monthly payment is " + monthlyPayment);
 
 //calculate the monthly payment using the following formulas:
 //Monthly payment = (mIR * M) / (1 - (1 / (1 + mIR)^12*nOY));
@@ -52,15 +59,15 @@ public class Mortgage
         return annualInrestRate;
     }
 
-    public static int getYearsOfMortgage(){
+    public static double getYearsOfMortgage(){
         log("Is your mortgage a 10, 15, or 30 year mortgage?");
-        int yearsOfMortgage = scanner.nextInt();
+        double yearsOfMortgage = scanner.nextDouble();
         return yearsOfMortgage;
     }
 
-    public static String getAmountBorrowed(){
+    public static double getAmountBorrowed(){
         log("What is the loan amount?");
-        String amountBorrowed = scanner.nextLine();
+        double amountBorrowed = scanner.nextDouble();
         return amountBorrowed;
     }
 
