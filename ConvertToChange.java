@@ -17,10 +17,26 @@ public class ConvertToChange {
     try {
       double amountOfMoney = getAmountOfMoney();
 
+      // Example #1 ---------------------------
+
       amountOfMoney = printQuartersAndReturnsRemainingAmount(amountOfMoney);
       amountOfMoney = printDimesAndReturnsRemainingAmount(amountOfMoney);
 
-      log("End for test");
+      // Example #2 ---------------------------
+
+      // amountOfMoney = printChangeAndReturnRemainingAmount(amountOfMoney, "Dollar");
+      // amountOfMoney = printChangeAndReturnRemainingAmount(amountOfMoney,
+      // "Quarter");
+      // amountOfMoney = printChangeAndReturnRemainingAmount(amountOfMoney, "Dime");
+      // amountOfMoney = printChangeAndReturnRemainingAmount(amountOfMoney, "Nickel");
+      // amountOfMoney = printChangeAndReturnRemainingAmount(amountOfMoney, "Penny");
+
+      // Example #3 ---------------------------
+
+      // String[] types = { "Dollar", "Quarter", "Dime", "Nickel", "Penny" };
+      // for (String type : types) {
+      // amountOfMoney = printChangeAndReturnRemainingAmount(amountOfMoney, type);
+      // }
 
     } catch (Exception nope) {
       log("Incorrect input. Please try again.");
@@ -46,6 +62,27 @@ public class ConvertToChange {
     log("you have " + numberOfDimes + "dimes");
     return amountOfMoney % 0.1;
   }
+
+  // public static double printChangeAndReturnRemainingAmount(double
+  // amountOfMoney, String type) {
+  // switch (type) {
+  // case "Dollar":
+  // final double DOLLAR_VAL = 1.00;
+  // int dollars = (int) (amountOfMoney / DOLLAR_VAL);
+  // log("Dollars: " + dollars);
+  // return amountOfMoney % DOLLAR_VAL;
+  // case "Quarter":
+  // break;
+  // case "Dime":
+  // break;
+  // case "Nickel":
+  // break;
+  // case "Penny":
+  // break;
+  // default:
+  // throw new Exception("The type " + type + " is not supported");
+  // }
+  // }
 
   public static void log(String msg) {
     System.out.println(msg);
