@@ -5,7 +5,7 @@ Assign
 
 example: assigns the value 2 to the integer var
 ```Java
-int var = 2;
+int var = 2; //type variable assign the value of 2
 ```
 Algorithms
 : performs tasks for which there are standard methods of processing
