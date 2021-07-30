@@ -43,10 +43,9 @@ public class MoneyConversion
             //convert to quarters, dimes, nickles, pennies
 
         }
-
         catch(Exception nope)
         {
-            log("Inncorrect input. Please try again.");
+            log("Incorrect input. Please try again.");
         }
     }
 
@@ -54,7 +53,7 @@ public class MoneyConversion
     {
         log("How many quarters do you have?");
         double amountOfQuarters = scanner.nextInt();
-        double quarterAmount = 0.25 x amountOfQuarters;
+        double quarterAmount = 0.25 * amountOfQuarters;
         return quarterAmount;
     }
 
@@ -62,21 +61,30 @@ public class MoneyConversion
     {
         log("How many dimes do you have?");
         double amountOfDimes = scanner.nextInt();
-        return amountOfDimes;
+        double dimeAmount = 0.10 * amountOfDimes;
+        return dimeAmount;
     }
 
     public static double getAmountOfNickles()
     {
         log("How many nickles do you have?");
         double amountOfNickles = scanner.nextInt();
-        return amountOfNickles;
+        double nickleAmount = 0.05 * amountOfNickles;
+        return nickleAmount;
     }
 
     public static double getAmountOfPennies()
     {
         log("How many pennies do you have?");
         double amountOfPennies = scanner.nextInt();
-        return amountOfPennies;
+        double pennyAmount = 0.01 * amountOfPennies;
+        return pennyAmount;
+    }
+
+    public static double printAmountOfMoney()
+    {
+        double totalAmount = amountOfQuarters + amountOfDimes + amountOfNickles + amountOfPennies;
+        log("Your change is equal to ")
     }
 
     public static void log(String msg)
