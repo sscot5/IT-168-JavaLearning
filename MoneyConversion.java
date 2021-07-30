@@ -13,14 +13,14 @@
 
  //import
 
-//import java.text.DecimalFormat;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class MoneyConversion
 {
     //properties of class
     private static Scanner scanner = new Scanner (System.in);
-    //private static DecimalFormat pricePattern = new DecimalFormat("$0.00");
+    private static DecimalFormat pricePattern = new DecimalFormat("$0.00");
 
     public static void main(String[] args) 
     {
@@ -81,10 +81,10 @@ public class MoneyConversion
         return pennyAmount;
     }
 
-    public static double printAmountOfMoney()
+    public static void printAmountOfMoney(double amountOfQuarters, double amountOfDimes, double amountOfNickles, double amountOfPennies)
     {
         double totalAmount = amountOfQuarters + amountOfDimes + amountOfNickles + amountOfPennies;
-        log("Your change is equal to ")
+        log("Your change is equal to " + pricePattern.format(totalAmount));
     }
 
     public static void log(String msg)
