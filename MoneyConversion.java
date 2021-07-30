@@ -1,7 +1,7 @@
 /**
  * Author: Stephanie Scott
  *
- * Description: 
+ * Description: Converts amount of change to dollar notation
  *
  * Date: 7/30/21
  *
@@ -9,7 +9,6 @@
  representing respectively, a number of quarters, dimes, nickels, and pennies.
  Convert the total coin amount to dollars and output the result with
  dollar notation.
-
  */
 
  // imports
