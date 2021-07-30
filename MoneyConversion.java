@@ -5,20 +5,20 @@
  *
  * Date: 7/30/21
  *
- *Write a program that reads three integer values from the keyboard 
- *representing respectively, a number of quarters, dimes, and nickels.
- *Convert the total coin amount to dollars and output the result with
- *dollar notation.
+ *  Write a program that reads three integer values from the keyboard 
+ representing respectively, a number of quarters, dimes, nickels, and pennies.
+ Convert the total coin amount to dollars and output the result with
+ dollar notation.
+
  */
 
- //import
-
+ // imports
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class MoneyConversion
 {
-    //properties of class
+    // properties of class
     private static Scanner scanner = new Scanner (System.in);
     private static DecimalFormat pricePattern = new DecimalFormat("$0.00");
 
@@ -26,22 +26,15 @@ public class MoneyConversion
     {
         try 
         {
-            //prompt the user for an integer representing how many
-            //quarters, dimes, nickles, and pennies they have (4 integers total)
+            // prompt the user for an integer representing how many
+            // quarters, dimes, nickles, and pennies they have (4 integers total)
             double amountOfQuarters = getAmountOfQuarters();
             double amountOfDimes = getAmountOfDimes();
             double amountOfNickles = getAmountOfNickles();
             double amountOfPennies = getAmountOfPennies();
 
-            //convert coin amounts to dollars
+            // convert coin amounts to dollars; output in dollar notation
             printAmountOfMoney(amountOfQuarters, amountOfDimes, amountOfNickles, amountOfPennies);
-
-            //output in dollar notation
-
-            //prompt for monetary amount user has
-
-            //convert to quarters, dimes, nickles, pennies
-
         }
         catch(Exception nope)
         {
