@@ -2,18 +2,21 @@
 /**
  * Author: Stephanie Scott
  *
- * Description: Converts amount of change to dollar notation
+ * Description: Converts dollar amount to change telling user the number
+ * of quarters, dimes, nickels, and pennies
  *
+ *  includes three seperate ways to achieve this
+ * 
  * Date: 7/30/21
  */
 
 import java.util.Scanner;
 
-public class ConvertToChange {
-
+public class ConvertToChange 
+{
   private static Scanner scanner = new Scanner(System.in);
-
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+  {
     try {
       double amountOfMoney = getAmountOfMoney();
 
@@ -21,7 +24,7 @@ public class ConvertToChange {
 
       amountOfMoney = printQuartersAndReturnsRemainingAmount(amountOfMoney);
       amountOfMoney = printDimesAndReturnsRemainingAmount(amountOfMoney);
-      amountOfMoney = printNicklesAndReturnsRemainingAmount(amountOfMoney);
+      amountOfMoney = printNickelsAndReturnsRemainingAmount(amountOfMoney);
       amountOfMoney = printPenniesAndReturnsRemaingAmount(amountOfMoney);
 
       // Example #2 ---------------------------
@@ -45,13 +48,15 @@ public class ConvertToChange {
     }
   }
 
-  public static double getAmountOfMoney() {
+  public static double getAmountOfMoney() 
+  {
     log("How much money do you have?");
     double amountOfMoney = scanner.nextDouble();
     return amountOfMoney;
   }
 
-  public static double printQuartersAndReturnsRemainingAmount(double amountOfMoney) {
+  public static double printQuartersAndReturnsRemainingAmount(double amountOfMoney) 
+  {
     int numberOfQuarters = (int) (amountOfMoney / 0.25);
     log("You have " + numberOfQuarters + " quarters");
     // .87 => 3q, 1d, 2p
@@ -59,15 +64,17 @@ public class ConvertToChange {
     return amountOfMoney % 0.25;
   }
 
-  public static double printDimesAndReturnsRemainingAmount(double amountOfMoney) {
+  public static double printDimesAndReturnsRemainingAmount(double amountOfMoney) 
+  {
     int numberOfDimes = (int) (amountOfMoney / 0.1);
     log("you have " + numberOfDimes + " dimes");
     return amountOfMoney % 0.1;
   }
 
-  public static double printNicklesAndReturnsRemainingAmount(double amountOfMoney){
-    int numberOfNickles = (int) (amountOfMoney / 0.05);
-    log("You have " + numberOfNickles + " nickles");
+  public static double printNickelsAndReturnsRemainingAmount(double amountOfMoney)
+  {
+    int numberOfNickels = (int) (amountOfMoney / 0.05);
+    log("You have " + numberOfNickels + " nickels");
     return amountOfMoney % 0.05;
   }
 
@@ -77,8 +84,7 @@ public class ConvertToChange {
     return amountOfMoney % 0.01;
   }
 
-  // public static double printChangeAndReturnRemainingAmount(double
-  // amountOfMoney, String type) {
+  // public static double printChangeAndReturnRemainingAmount(double amountOfMoney, String type) {
   // switch (type) {
   // case "Dollar":
   // final double DOLLAR_VAL = 1.00;
@@ -86,13 +92,25 @@ public class ConvertToChange {
   // log("Dollars: " + dollars);
   // return amountOfMoney % DOLLAR_VAL;
   // case "Quarter":
-  // break;
+  // final double QUARTER = 0.25;
+  // int quarters = (int) (amountOfMoney / QUARTER);
+  // log("Quarters: " + quarters);
+  // return amountOfMoney % QUARTER;
   // case "Dime":
-  // break;
+  // final double DIME = 0.1;
+  // int dime = (int) (amountOfMoney / DIME);
+  // log("Dimes: " + dime);
+  // return amountOfMoney % DIME;
   // case "Nickel":
-  // break;
+  // final double NICKEL = 0.05;
+  // int nickel = (int) (amountOfMoney / NICKEL);
+  // log("Nickels: " + nickel);
+  // return amountOfMoney % NICKEL;
   // case "Penny":
-  // break;
+  // final double PENNY = 0.01;
+  // int penny = (int) (amountOfMoney / PENNY);
+  // log("Pennies: " + penny);
+  // return amountOfMoney % PENNY;
   // default:
   // throw new Exception("The type " + type + " is not supported");
   // }
