@@ -21,6 +21,8 @@ public class ConvertToChange {
 
       amountOfMoney = printQuartersAndReturnsRemainingAmount(amountOfMoney);
       amountOfMoney = printDimesAndReturnsRemainingAmount(amountOfMoney);
+      amountOfMoney = printNicklesAndReturnsRemainingAmount(amountOfMoney);
+      amountOfMoney = printPenniesAndReturnsRemaingAmount(amountOfMoney);
 
       // Example #2 ---------------------------
 
@@ -59,8 +61,20 @@ public class ConvertToChange {
 
   public static double printDimesAndReturnsRemainingAmount(double amountOfMoney) {
     int numberOfDimes = (int) (amountOfMoney / 0.1);
-    log("you have " + numberOfDimes + "dimes");
+    log("you have " + numberOfDimes + " dimes");
     return amountOfMoney % 0.1;
+  }
+
+  public static double printNicklesAndReturnsRemainingAmount(double amountOfMoney){
+    int numberOfNickles = (int) (amountOfMoney / 0.05);
+    log("You have " + numberOfNickles + " nickles");
+    return amountOfMoney % 0.05;
+  }
+
+  public static double printPenniesAndReturnsRemaingAmount(double amountOfMoney) {
+    int numberOfPennies = (int) (amountOfMoney / 0.01);
+    log("you have " + numberOfPennies + " pennies");
+    return amountOfMoney % 0.01;
   }
 
   // public static double printChangeAndReturnRemainingAmount(double

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ConvertToChange",
+            "request": "launch",
+            "mainClass": "ConvertToChange",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch MoneyConversion",
             "request": "launch",
             "mainClass": "MoneyConversion",
