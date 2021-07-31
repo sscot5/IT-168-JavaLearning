@@ -129,7 +129,11 @@ $ git merge <branch name>
 ```
 
 This will merge the branch you picked into the branch you are on.
+
 If there are conflicts, you will need to resolve them before continuing
+
+When resolving conflicts, make changes then do git add **.** 
+git merge --continue
 
 ### Delete a branch
 ```bash
