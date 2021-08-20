@@ -11,4 +11,7 @@ Quiz on Wednesday over Syllabus
 Wednesday: 8/18/21
 : - Lab location Old Union 134
 : - Use I drive in lab
-: - 
+
+
+CPU - where the computer actually get stuff done
+
