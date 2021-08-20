@@ -7,7 +7,7 @@
  * 
  */
 
-public class FifthProgram 
+public class RadiusCalArea 
 {
     public static void main(String[] args)
     {

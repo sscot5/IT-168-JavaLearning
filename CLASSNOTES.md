@@ -15,3 +15,19 @@ Wednesday: 8/18/21
 
 CPU - where the computer actually get stuff done
 
+Friday 8/20/21
+#Code Order
+Package statements
+Import statements (example: Scanner)
+Class
+Main Method
+
+```Java 
+public class HelloWorld //Class
+{
+    public static void main(String [arg]) //main method
+    {
+        //Write Code Here
+    } 
+}
+```
