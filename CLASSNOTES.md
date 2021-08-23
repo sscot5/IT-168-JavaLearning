@@ -46,3 +46,7 @@ Pseudocode
 : - structured the way we structure code
 : - can use math symbols, but the way we use them in English
 
+Division in Java
+: - what are the two different kinds of division in Java?
+: -- int division
+: -- float point division
