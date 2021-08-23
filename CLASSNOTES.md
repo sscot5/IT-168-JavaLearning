@@ -31,3 +31,18 @@ public class HelloWorld //Class
     } 
 }
 ```
+Monday 8/23/21
+
+Algorithm
+: - has zero or more well-defined inputs
+: - has one or more well-defined outputs
+: - is unambiguous
+: - ends (is finite)
+: - is language-independent
+
+Pseudocode
+: - a way to express algorithms
+: - uses English
+: - structured the way we structure code
+: - can use math symbols, but the way we use them in English
+
