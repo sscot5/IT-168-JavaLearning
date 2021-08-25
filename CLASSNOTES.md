@@ -50,3 +50,34 @@ Division in Java
 : - what are the two different kinds of division in Java?
 : -- int division
 : -- float point division
+
+** Remember in Java Arithmetic **
+: - ( ) first
+: - division, multiplication, remainder left to right
+: - then addition and subtraction left to right
+: - everything on left of assingment operator is done first example:
+```Java
+int num = 3;
+num *= 3 + 2;
+// this is num = num * (3 + 2);
+```
+
+8/25/21
+Three ways to creat comment in java 
+ - /* */ multiline comment
+ - /** */ javadoc comment (beginning of class)
+ - // comments single line comment
+
+class is a templete for the object
+
+declaration v initialization
+
+Declaration
+: - declaration example int highTemp; just need the type and variable name
+
+Assignment
+: - highTemp = 78; gives the variable a value
+
+Declaration-initialization
+: - both declare it and put a value in it example int highTemp = 78;
+
