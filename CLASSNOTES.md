@@ -81,3 +81,4 @@ Assignment
 Declaration-initialization
 : - both declare it and put a value in it example int highTemp = 78;
 
+8/27/2021
