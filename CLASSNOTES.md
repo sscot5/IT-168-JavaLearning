@@ -1,17 +1,6 @@
 #Class Notes IT168
 
-Quiz on Wednesday over Syllabus
-: - expect to spend 10 hours per week studying
-: - two written exams from 8-10pm on 9/29 and 11/3
-: - lab exam the last week of labs (10% of final grade)
-: - six programming assignments throughout the semester (individual projects)
-: - get microsoft teams set up
-: - introduce self in teams this week and email professor questionnaire quiz in reggienet that must be complete
-
 Wednesday: 8/18/21
-: - Lab location Old Union 134
-: - Use I drive in lab
-
 
 CPU - where the computer actually get stuff done
 
@@ -82,3 +71,30 @@ Declaration-initialization
 : - both declare it and put a value in it example int highTemp = 78;
 
 8/27/2021
+
+Object declaration
+: - class name variable name
+: - instantances of a class
+
+example
+```Java
+SavingsAcct myAcct;
+SimpleDate myDate;
+```
+
+Constructor
+: - 
+: - default constructor - empty ( ), do not need to provide any information
+
+```Java
+      //declaration
+    Student stu1
+
+        //instantiation
+    Student stu1 = new Student();
+    Monster theEnemy = new Monster();
+    Employee john = new Employee();
+    
+        //declarazation initialization (declare and create)
+    Student stu2 = new Student("Anne Hawkins");
+```
