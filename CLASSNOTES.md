@@ -110,3 +110,8 @@ stu1.updateHours(12);
 
 String stuName = stu1.getName();
 ```
+Signature
+: - name
+: - what does the method return
+: - how many arguements it takes
+
