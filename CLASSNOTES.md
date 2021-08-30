@@ -98,3 +98,15 @@ Constructor
         //declarazation initialization (declare and create)
     Student stu2 = new Student("Anne Hawkins");
 ```
+
+8/30/2021
+
+```Java
+Student stu1 = new Student("John Doe", 15);
+
+void updateHours(int semHoursCompleted);
+
+stu1.updateHours(12);
+
+String stuName = stu1.getName();
+```
