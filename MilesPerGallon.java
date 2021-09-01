@@ -10,7 +10,6 @@
 // imports
 import java.util.Scanner;
 
-
 public class MilesPerGallon {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
