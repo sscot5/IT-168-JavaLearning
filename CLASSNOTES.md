@@ -117,3 +117,21 @@ Signature
 
 9/1/2021
 
+Algorithm Practice:
+: - The restaurant sales tax is 6.25%
+: - You tip 20%
+: - Write a program that asks for the amount of a restaurant bill before tax and computes the total payment including tax and tip
+: - the tip should be based on the total after tax
+: - print the original amount, the tax, the tip, and the total with labels.
+
+How to right this algorithm in psedocode:
+
+set TAX_Rate to 0.0625
+set TIP_PERCENT to 0.2
+ask for bill amount
+read billAmount from keyboard
+set taxAmount to billAmount * TAX_RATE
+set tipAmount to TIP_PERCENT * (billAmount + taxAmount)
+set total to billAmount + taxAmount + tipAmount
+print billAmount, taxAmount, tipAmount, and total with labels
+
