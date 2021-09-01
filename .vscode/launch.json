@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MilesPerGallon",
+            "request": "launch",
+            "mainClass": "MilesPerGallon",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch NewProject",
             "request": "launch",
             "mainClass": "NewProject",
