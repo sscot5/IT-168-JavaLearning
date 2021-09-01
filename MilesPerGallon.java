@@ -1,13 +1,13 @@
-/**
+/*
  * Author: Stephanie Scott
- *
- * Description: 
- *
  * Date: 9/1/21
- *
  */
 
-// imports
+/**
+ * Description: A program to calculate miles per gallon.
+  */
+
+  // imports
 import java.util.Scanner;
 
 public class MilesPerGallon {
