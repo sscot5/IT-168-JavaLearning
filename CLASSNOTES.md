@@ -126,7 +126,7 @@ Algorithm Practice:
 
 How to right this algorithm in psedocode:
 
-set TAX_Rate to 0.0625
+set TAX_RATE to 0.0625
 set TIP_PERCENT to 0.2
 ask for bill amount
 read billAmount from keyboard
@@ -134,4 +134,30 @@ set taxAmount to billAmount * TAX_RATE
 set tipAmount to TIP_PERCENT * (billAmount + taxAmount)
 set total to billAmount + taxAmount + tipAmount
 print billAmount, taxAmount, tipAmount, and total with labels
+
+9/3/2021
+
+must use nextLine( ) when reading a string from the scanner
+
+issue could run into when asking for anything other than a string from input then trying to ask for an input in a string format 
+
+it doesn't read the input so we must use input.nextLine( ) example below
+
+```Java
+int num = input.nextInt();
+input.nextLine();
+String name = input.nextLine();
+```
+Random
+: - default constructor
+: - returns a random number in the range 0 to bound -1
+```Java
+Random random = new Random();
+        int start = 1;
+        int end = 20;
+        int number = random.nextInt (end - start + 1) + start;
+```
+
+In number formating or decial formating
+: - a 0 means a number must be there a # means it is optional
 
