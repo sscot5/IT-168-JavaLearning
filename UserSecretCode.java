@@ -45,7 +45,8 @@ public class UserSecretCode {
         System.out.println("The username is: " + userName.toLowerCase() + number);
 
         // Seperate the last four digits of the phone number, and the first three digits
-        String lastFourDigits = phoneNumber.substring(8);
+        int lastDashIndex = phoneNumber.lastIndexOf('-'); 
+        String lastFourDigits = phoneNumber.substring(lastDashIndex + 1);
         String areaCode = phoneNumber.substring(0,3);
 
         // generate a random number from 100 to 999
