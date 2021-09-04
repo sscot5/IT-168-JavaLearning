@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch UserSecretCode",
+            "request": "launch",
+            "mainClass": "UserSecretCode",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch DateFormat",
+            "request": "launch",
+            "mainClass": "DateFormat",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch SecondsToHours",
             "request": "launch",
             "mainClass": "SecondsToHours",
