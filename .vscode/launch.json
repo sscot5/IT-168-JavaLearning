@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Distance",
+            "request": "launch",
+            "mainClass": "Distance",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch UserSecretCode",
             "request": "launch",
             "mainClass": "UserSecretCode",
