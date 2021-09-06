@@ -24,7 +24,7 @@ public class Distance {
     private static DecimalFormat decimalFormat = new DecimalFormat("#0.00");
     public static void main(String[] args) {
     
-    //Prompt the user for two x integer values and two y integer values
+    // Prompt the user for two x integer values and two y integer values
     System.out.print("Enter the first x value: ");
     int x1 = scanner.nextInt();
     
@@ -45,7 +45,7 @@ public class Distance {
     double dYSquared = Math.pow(dY, SQUARED_EXPONATE);
     double distance = Math.sqrt(dXSquared + dYSquared);
 
-    //display the distance formatted with only two decimal spaces
+    // display the distance formatted with only two decimal spaces
     System.out.println("The distance of (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ") is " + decimalFormat.format(distance) + ".");
     }
 }

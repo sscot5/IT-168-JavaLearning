@@ -16,32 +16,46 @@ public class UserSecretCode {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
-        //ask for and print users first and last name seperately
+        // ask for and print users first and last name seperately
         System.out.print("Enter your first name: ");
         String firstName = scanner.nextLine();
         
         System.out.print("Enter your last name: ");
         String lastName = scanner.nextLine();
         
-        //ask for phone number including dashes
+        // ask for phone number including dashes
         System.out.print("Enter your phone number in the format xxx-xxx-xxxx: ");
         String phoneNumber = scanner.nextLine();
         
-        //generate random number between 10 to 99
+        // generate random number between 10 to 99
         Random randomNumber = new Random();
         int start = 10;
         int end = 99;
         int number = randomNumber.nextInt(end - start + 1) + start;
         System.out.println("Random Number: " + number);
 
-        //get the first letter of first name
+        // get the first letter of first name
         char firstNameFirstLetter = firstName.charAt(0);
-
-        //get first five characters of the user's last name
-        String lastNameFirstFiveLetter = lastName.substring(0, 5);
         
-        //Print user name containing first letter of first name + first five letters of last name + random number
-        String userName = firstNameFirstLetter + lastNameFirstFiveLetter;
+        // get first five characters of the user's last name 
+        
+        // Case ONE if no last name has less than five characters
+        // String lastNameSubstring = lastName.substring(0, 5);
+        
+        // Case TWO if we need padding
+        // String lastNamePadded = lastName + "ssss";
+        // String lastNameSubstring = lastNamePadded.substring(0, 5); //Does not work if the last name is less than five letters
+        
+        // Case THREE if else statement
+        String lastNameSubstring;
+        if (lastName.length() < 5) {
+            lastNameSubstring= lastName;
+        } else {
+            lastNameSubstring = lastName.substring(0, 5);
+        }
+        
+        // Print user name containing first letter of first name + first five letters of last name + random number
+        String userName = firstNameFirstLetter + lastNameSubstring;
         System.out.println("The username is: " + userName.toLowerCase() + number);
 
         // Seperate the last four digits of the phone number, and the first three digits
@@ -56,7 +70,7 @@ public class UserSecretCode {
         int number2 = randomNumber2.nextInt(end2 - start2 + 1) + start2;
         System.out.println("Random Number: " + number2);
 
-        //Create a code by taking the last four digits of the phone number, appending a random number, and then appending the area code.
+        // Create a code by taking the last four digits of the phone number, appending a random number, and then appending the area code.
         String code = lastFourDigits + number2 + areaCode;
 
         // replace all 6’s in the secret code with @, 
