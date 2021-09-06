@@ -47,20 +47,20 @@ public class UserSecretCode {
         // String lastNameSubstring = lastNamePadded.substring(0, 5); //Does not work if the last name is less than five letters
         
         // Case THREE: adding white space then trim
-    
-        String lastNameWithWhiteSpace = lastName + "    ";
-        String lastNameSubstring = lastNameWithWhiteSpace.substring(0, 5);
+        // String lastNameWithWhiteSpace = lastName + "    ";
+        // String lastNameSubstring = lastNameWithWhiteSpace.substring(0, 5);
+        //String userName = firstNameFirstLetter + lastNameSubstring.strip();
     
         // Case FOUR if else statement
-        // String lastNameSubstring;
-        // if (lastName.length() < 5) {
-        //     lastNameSubstring= lastName;
-        // } else {
-        //     lastNameSubstring = lastName.substring(0, 5);
-        // }
+        String lastNameSubstring;
+        if (lastName.length() < 5) {
+            lastNameSubstring= lastName;
+        } else {
+            lastNameSubstring = lastName.substring(0, 5);
+        }
         
         // Print user name containing first letter of first name + first five letters of last name + random number
-        String userName = firstNameFirstLetter + lastNameSubstring.strip();
+        String userName = firstNameFirstLetter + lastNameSubstring;
         System.out.println("The username is: " + userName.toLowerCase() + number);
 
         // Seperate the last four digits of the phone number, and the first three digits
