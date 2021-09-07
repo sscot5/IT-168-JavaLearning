@@ -10,7 +10,7 @@
 
 import java.util.Scanner;
 
-public class NewProject {
+public class ArrayFavFood {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String [] args){
