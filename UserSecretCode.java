@@ -39,19 +39,12 @@ public class UserSecretCode {
         
         // get first five characters of the user's last name 
         
-        // Case ONE if no last name has less than five characters
-        // String lastNameSubstring = lastName.substring(0, 5);
-        
-        // Case TWO if we need padding
-        // String lastNamePadded = lastName + "ssss";
-        // String lastNameSubstring = lastNamePadded.substring(0, 5); //Does not work if the last name is less than five letters
-        
-        // Case THREE: adding white space then trim
+        // Case ONE: adding white space then trim
         // String lastNameWithWhiteSpace = lastName + "    ";
         // String lastNameSubstring = lastNameWithWhiteSpace.substring(0, 5);
-        //String userName = firstNameFirstLetter + lastNameSubstring.strip();
+        // String userName = firstNameFirstLetter + lastNameSubstring.trim();
     
-        // Case FOUR if else statement
+        // Case TWO if else statement
         String lastNameSubstring;
         if (lastName.length() < 5) {
             lastNameSubstring= lastName;
