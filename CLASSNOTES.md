@@ -161,3 +161,4 @@ Random random = new Random();
 In number formating or decial formating
 : - a 0 means a number must be there a # means it is optional
 
+9/8/2021
