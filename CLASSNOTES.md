@@ -162,3 +162,19 @@ In number formating or decial formating
 : - a 0 means a number must be there a # means it is optional
 
 9/8/2021
+```Java
+Rectangle myRect = new Rectangle(50, 30);
+myRect.draw();
+```
+where Rectangle is a ***Class*** and ***Type***
+.draw is a ***method***
+myRect is ***object***
+new Rectangle is 
+(50, 30) is the ***argument list***
+
+Static
+: - belongs to the class as a whole not the individual object
+: - how many copies do we have a class (static) variable? --> one for the class
+: - how do we call a class (static) method? --> use ClassName.method
+: - what data do class methods usually operate on? --> parameters
+
