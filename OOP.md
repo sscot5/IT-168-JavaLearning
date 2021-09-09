@@ -28,3 +28,15 @@ a and b are variable that identifes my instances (drawing) of a square
 The class tells the computer how much space to save for our data
 The constructor is what is building our squares for us and need to pass the value
 that tells the computer how large to build our square
+
+Instanciating an object of the square class
+```Java
+Square squareA = new Square(1);
+squareA.draw();
+```
+where the first Square is the class and type
+squareA is the identifier
+new Square is the constructor
+squareA in line two is the variable, object, and instance
+.draw is the method
+1 is the arguments
