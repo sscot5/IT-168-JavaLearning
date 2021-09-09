@@ -8,7 +8,7 @@ public class SecondsToHours {
 
         // set constants
         final int ONE_MINUTE_IN_SECONDS = 60;
-        final int ONE_HOUR_IN_MINUTES = 60;
+        final int ONE_HOUR_IN_SECONDS = 3600;
 
         // get total minutes
         System.out.print("What is the total seconds?  ");
@@ -19,8 +19,8 @@ public class SecondsToHours {
          int seconds = totalSeconds % ONE_MINUTE_IN_SECONDS;
 
          // calculate minutes to hours
-         int hours = totalMinutes / ONE_HOUR_IN_MINUTES;
-         int minutes = totalMinutes % ONE_HOUR_IN_MINUTES;
+         int hours = totalSeconds / ONE_HOUR_IN_SECONDS;
+         int minutes = totalMinutes % ONE_MINUTE_IN_SECONDS;
 
          // print hours, minutes, seconds
          System.out.println(totalSeconds + " is " + hours + " hours " + minutes + " minutes " + seconds + " seconds.");
