@@ -178,5 +178,4 @@ Static
 : - how do we call a class (static) method? --> use ClassName.method
 : - what data do class methods usually operate on? --> parameters
 
-9/10/21
 
