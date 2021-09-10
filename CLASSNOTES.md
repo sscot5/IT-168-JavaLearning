@@ -168,8 +168,8 @@ myRect.draw();
 ```
 where Rectangle is a ***Class*** and ***Type***
 .draw is a ***method***
-myRect is ***object***
-new Rectangle is 
+myRect is ***object***, ***variable***, and ***instance***
+new Rectangle is a ***constructor***
 (50, 30) is the ***argument list***
 
 Static
@@ -177,4 +177,6 @@ Static
 : - how many copies do we have a class (static) variable? --> one for the class
 : - how do we call a class (static) method? --> use ClassName.method
 : - what data do class methods usually operate on? --> parameters
+
+9/10/21
 
