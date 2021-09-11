@@ -87,7 +87,7 @@ public class CupcakeCal {
 
     if (totalCupcakes >= 36){
         System.out.println("Discount percentage: " + percentPattern.format(PERCENT_DISCOUNT_THREE_DOZEN));
-        System.out.println("Discount amount: " + decimalFormat.format(totalCost * PERCENT_DISCOUNT_THREE_DOZEN)); //FIXME
+        System.out.println("Discount amount: " + decimalFormat.format(totalCost * PERCENT_DISCOUNT_THREE_DOZEN));
         System.out.println("Discounted subtotal: " + decimalFormat.format(discountCost));
     } else if (totalCupcakes >= 12){
         System.out.println("Discount percentage: " + percentPattern.format(PERCENT_DISCOUNT_DOZEN));
