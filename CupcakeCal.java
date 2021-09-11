@@ -18,6 +18,7 @@ import java.text.DecimalFormat;
 public class CupcakeCal {
     private static Scanner scanner = new Scanner(System.in);
     private static DecimalFormat decimalFormat = new DecimalFormat("$#0.00");
+    private static DecimalFormat percentPattern = new DecimalFormat("0.#%");
     public static void main(String[] args) {
     
     // constants
@@ -27,6 +28,8 @@ public class CupcakeCal {
     final double SALES_TAX = 0.0725;
     final double DOZEN_DISCOUNT = 0.9;
     final double THREE_DOZEN_DISCOUNT = 0.85;
+    final double PERCENT_DISCOUNT_DOZEN = .1;
+    final double PERCENT_DISCOUNT_THREE_DOZEN = .15;
 
     // Welcome message
     System.out.println("Welcome to the Pflugerville Bakery!");
@@ -83,12 +86,12 @@ public class CupcakeCal {
     System.out.println("Subtotal: " + decimalFormat.format(totalCost));
 
     if (totalCupcakes >= 36){
-        System.out.println("Discount percentage: 15%");
-        System.out.println("Discount amount: " + decimalFormat.format(totalCost * .15)); //FIXME
+        System.out.println("Discount percentage: " + percentPattern.format(PERCENT_DISCOUNT_THREE_DOZEN));
+        System.out.println("Discount amount: " + decimalFormat.format(totalCost * PERCENT_DISCOUNT_THREE_DOZEN)); //FIXME
         System.out.println("Discounted subtotal: " + decimalFormat.format(discountCost));
     } else if (totalCupcakes >= 12){
-        System.out.println("Discount percentage: 10%");
-        System.out.println("Discount amount: " + decimalFormat.format(totalCost * .1));
+        System.out.println("Discount percentage: " + percentPattern.format(PERCENT_DISCOUNT_DOZEN));
+        System.out.println("Discount amount: " + decimalFormat.format(totalCost * PERCENT_DISCOUNT_DOZEN));
         System.out.println("Discounted subtotal: " + decimalFormat.format(discountCost));
     } 
     System.out.println("Tax: " + decimalFormat.format(taxCost));
