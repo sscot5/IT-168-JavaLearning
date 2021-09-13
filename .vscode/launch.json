@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NumberComparison",
+            "request": "launch",
+            "mainClass": "NumberComparison",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch SaleCommission",
             "request": "launch",
             "mainClass": "SaleCommission",
