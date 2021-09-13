@@ -11,7 +11,7 @@
  import java.util.Scanner;
  import java.util.Random;
 
-public class PracticeMethodCh3 
+public class WhileLoop 
 {
     public static Scanner scanner = new Scanner(System.in);
 
