@@ -52,15 +52,14 @@ public class SaleCommission{
     System.out.println("Total sale commission: " + decimalFormat.format(totalSaleCommission));
     
     double commissionWithBonus;
-    if (numSold >= 5 && totalSaleCommission >= 20000){
+    boolean getsBonus = numSold >= 5 && totalSaleCommission >= 20000;
+    if (getsBonus){
         commissionWithBonus = commission + BONUS;
-        boolean bonus = true;
-        System.out.println("Recieved bonus: " + bonus);
+        System.out.println("Recieved bonus: " + getsBonus);
         System.out.println("Total commission: " + decimalFormat.format(commissionWithBonus));
     } else {
         commissionWithBonus = commission;
-        boolean bonus = false;
-        System.out.println("Recieved bonus: " + bonus);
+        System.out.println("Recieved bonus: " + getsBonus);
         System.out.println("Total commission: " + decimalFormat.format(commissionWithBonus));
     }
     }
