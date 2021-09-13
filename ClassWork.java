@@ -1,4 +1,6 @@
+import java.util.Scanner;
 public class ClassWork {
+    private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         double classAverage = 90;
         double examAverage = 76;
@@ -32,5 +34,20 @@ public class ClassWork {
             cost = deskCost;
         }
 
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        switch (num)
+        {
+          case 1:
+              System.out.print("One");
+              break;
+          case 2:
+              System.out.print("Two");
+          case 3:
+              System.out.print("Three");
+              break;
+          default:
+              System.out.print("More");
+        }
     }
 }

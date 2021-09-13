@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SaleCommission",
+            "request": "launch",
+            "mainClass": "SaleCommission",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassWork",
+            "request": "launch",
+            "mainClass": "ClassWork",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch CupcakeCal",
             "request": "launch",
             "mainClass": "CupcakeCal",
