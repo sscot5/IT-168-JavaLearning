@@ -20,8 +20,10 @@ public class NumberComparison {
     int start = 1;
     int end = 200;
     int num1 = randomNumber.nextInt(end - start + 1) + start;
-    int num2 = randomNumber.nextInt(end - start + 1) + start;
     System.out.println("Random number: " + num1);
+    
+    Random randomNum2 = new Random();
+    int num2 = randomNum2.nextInt(end - start + 1) + start;
 
     if (num1 % 2 == 0){
         System.out.println("The number " + num1 + " is even.");
@@ -35,7 +37,7 @@ public class NumberComparison {
         System.out.println("The number " + num1 + " is small.");
     }
 
-    System.out.println("Random number 2: " + num2);
+    System.out.println("Second random number: " + num2);
 
     if (num1 > num2){
         System.out.println(num2 + " is smaller than " + num1);
