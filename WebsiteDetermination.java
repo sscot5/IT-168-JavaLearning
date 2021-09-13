@@ -25,24 +25,27 @@ public class WebsiteDetermination {
     String endOfWebsite = website.substring(lastDotIndex + 1);
     System.out.println(endOfWebsite);
 
+    String type;
     switch(endOfWebsite){
         case "gov":
-            System.out.println("The web address " + website + " is a government web address.");
+            type = "government";
             break;
 
         case "edu":
-            System.out.println("The web address " + website + " is a university web address.");
+            type = "university";
             break;
 
         case "com":
-             System.out.println("The web address " + website + " is a business web address.");
+            type = "business";
             break;
 
         case "org":
-            System.out.println("The web address " + website + " is a organization web address.");
+            type = "organization";
             break;
         default:
-            System.out.println("The web address " + website + " is another entity.");
+            type = "another entity";
     }
+
+    System.out.println("The web address " + website + " is a " + type + " web address.");
     }
 }

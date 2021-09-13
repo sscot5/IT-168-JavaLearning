@@ -33,6 +33,7 @@ public class ClassWork {
         } else {
             cost = deskCost;
         }
+        System.out.println(cost);
 
         System.out.print("Enter a number: ");
         int num = scanner.nextInt();
