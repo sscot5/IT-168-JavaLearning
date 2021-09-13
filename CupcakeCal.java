@@ -26,10 +26,10 @@ public class CupcakeCal {
     final double COST_CARAMEL = 2.5;
     final double COST_CHOCOLATE = 3.0;
     final double SALES_TAX = 0.0725;
-    final double DOZEN_DISCOUNT = 0.9;
-    final double THREE_DOZEN_DISCOUNT = 0.85;
     final double PERCENT_DISCOUNT_DOZEN = .1;
     final double PERCENT_DISCOUNT_THREE_DOZEN = .15;
+    final double DOZEN_DISCOUNT = 1 - PERCENT_DISCOUNT_DOZEN;
+    final double THREE_DOZEN_DISCOUNT = 1 - PERCENT_DISCOUNT_THREE_DOZEN;
 
     // Welcome message
     System.out.println("Welcome to the Pflugerville Bakery!");
@@ -45,8 +45,7 @@ public class CupcakeCal {
     System.out.print("Enter the number of Chocolate Delight cupcakes: ");
     int numChocolate = scanner.nextInt();
     System.out.print("Enter the day of the week you will pick up your order: ");
-    scanner.nextLine();
-    String pickUpDay = scanner.nextLine();
+    String pickUpDay = scanner.next();
     System.out.println();
 
     // Calculate total
