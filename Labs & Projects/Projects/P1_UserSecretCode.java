@@ -12,7 +12,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class UserSecretCode {
+public class P1_UserSecretCode {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 

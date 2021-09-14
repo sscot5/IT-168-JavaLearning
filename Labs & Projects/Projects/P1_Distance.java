@@ -19,7 +19,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class Distance {
+public class P1_Distance {
     private static Scanner scanner = new Scanner(System.in);
     private static DecimalFormat decimalFormat = new DecimalFormat("#0.00");
     public static void main(String[] args) {

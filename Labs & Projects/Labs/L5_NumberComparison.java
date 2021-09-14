@@ -12,7 +12,7 @@
  // imports
  import java.util.Random;
 
-public class NumberComparison {
+public class L5_NumberComparison {
     public static void main(String[] args) {
     
     // generate a random number between 1 and 200

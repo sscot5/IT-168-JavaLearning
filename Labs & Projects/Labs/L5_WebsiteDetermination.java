@@ -15,7 +15,7 @@
  // imports
  import java.util.Scanner;
 
-public class WebsiteDetermination {
+public class L5_WebsiteDetermination {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
     System.out.print("Enter the website: ");

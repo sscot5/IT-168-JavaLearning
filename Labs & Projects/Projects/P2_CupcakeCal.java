@@ -15,7 +15,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class CupcakeCal {
+public class P2_CupcakeCal {
     private static Scanner scanner = new Scanner(System.in);
     private static DecimalFormat decimalFormat = new DecimalFormat("$#0.00");
     private static DecimalFormat percentPattern = new DecimalFormat("0.#%");

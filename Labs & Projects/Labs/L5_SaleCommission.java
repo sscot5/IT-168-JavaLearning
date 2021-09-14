@@ -18,7 +18,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class SaleCommission{
+public class L5_SaleCommission{
     private static DecimalFormat decimalFormat = new DecimalFormat("$#0.00"); 
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {

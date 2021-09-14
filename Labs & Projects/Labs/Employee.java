@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-/*
+/*LAB 4
  * Employee.java
  * Created on Oct 4, 2004
  * By Mary Elaine Califf
