@@ -7,7 +7,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class Payroll {
+public class L4_Payroll {
     public static Scanner scanner = new Scanner(System.in);
     public static DecimalFormat pricePattern = new DecimalFormat("$0.00");
     public static void main(String[] args) {

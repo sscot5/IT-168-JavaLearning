@@ -178,3 +178,33 @@ Static
 : - how do we call a class (static) method? --> use ClassName.method
 : - what data do class methods usually operate on? --> parameters
 
+9/15/21 Chapter 6 Loops
+
+While Loops (Event-controlled looping)
+: - used when repeating a set of instructions for each input value when we don't know at the beginning how many input values there will be. 
+: - process each input value, one at a time, until a signal (an event) tells us that there is no more input.
+: - ***sentinel value*** is the signal for the end of the input 
+
+***while loop syntax:***
+```Java
+// initialize variables
+while (condition) {
+    // process data -- loop body
+}
+// results
+```
+
+the condition is a boolean expression
+: - if the condition is true the loop body is executed. This happens until the condition is false.
+: - each execution of the loop body is called an ***iteration*** of the loop.
+    : - example: if the loop body executes five times before the condition evaluates to false --> we say there were five iterations of the while loop.
+    : - If the condition is false to start with the while loop body is never executed and there would be zero iterations of the loop.
+: - Priming read --> after initializing we attempt to read the first item. This is called the priming read because we use that value to feed the condition of the while loop for the first iteration. 
+: - update read --> after the priming read we read the next data item called an update read because we update the data item in preparation for feeding its value into the condition of the while loop for the next iteration. This continues until we read the sentinel value.
+
+
+endless loops or infinite loops
+: - a while loop whose condition never evaluates to false.
+: - because the condition always evaluates to true the loop body is executed repeatedly, without end. The program will not terminate.
+: - ***Loop update statement*** --> inclueded in the loop body. It appropriately changes the variable that is being tested by the loop condition to ensure that the condition eventually results in false.
+

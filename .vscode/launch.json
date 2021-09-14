@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Accumulation",
+            "request": "launch",
+            "mainClass": "Accumulation",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L4_Payroll",
+            "request": "launch",
+            "mainClass": "L4_Payroll",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch Payroll",
             "request": "launch",
             "mainClass": "Payroll",
