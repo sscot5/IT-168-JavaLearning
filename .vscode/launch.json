@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Payroll",
+            "request": "launch",
+            "mainClass": "Payroll",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch WebsiteDetermination",
             "request": "launch",
             "mainClass": "WebsiteDetermination",
