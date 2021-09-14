@@ -10,7 +10,7 @@
 
 
  // for loop is used because we know we need to do 10 iterations
-public class Problem44 
+public class ForLoop 
 {
     public static void main(String[] args) 
     {
