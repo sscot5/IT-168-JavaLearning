@@ -1,3 +1,4 @@
+package Classwork;
 import java.util.Scanner;
 public class ClassWork {
     private static Scanner scanner = new Scanner(System.in);
