@@ -31,26 +31,22 @@ public class CountingItems {
         int countScores = 0;
         int score;
 
-        System.out.println("This program counts the number of passing test scores.");
-        System.out.print("Enter the first score or enter -1 to stop: ");
+        System.out.print("This program counts the number of passing test scores.\nEnter the first score or enter -1 to stop: ");
         score = scanner.nextInt();
 
         while (score != SENTINEL){
             if (score >= 60) {
-                countPassed += 1;
+                countPassed ++;
             }
-            countScores += 1;
+            countScores ++;
             System.out.print("Enter the next score or -1 to stop: ");
             score = scanner.nextInt();
         }
-        //FIXME
-        System.out.println("You entered " + countScores + " scores.");
-        System.out.println("The number of passing test scores is " + countPassed);
+        System.out.println("You entered " + countScores + " scores. \nThe number of passing test scores is " + countPassed);
 
-        //FIXME
-        double percentPassed = (countPassed / countScores);
+        // FIXME --> Why is this not scoping the values???
         if (countScores != 0) {
-            System.out.println(decimalFormat.format(percentPassed) + " of the class passed the test.");
+           System.out.println(decimalFormat.format((double)(countPassed / countScores)) + " of the class passed the test.");
         }
     }
     
