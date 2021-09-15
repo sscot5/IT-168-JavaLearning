@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CountingItems",
+            "request": "launch",
+            "mainClass": "loopsCh6.CountingItems",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch Accumulation",
             "request": "launch",
             "mainClass": "Accumulation",
