@@ -47,6 +47,7 @@ public class CountingItems {
         System.out.println("You entered " + countScores + " scores.");
         System.out.println("The number of passing test scores is " + countPassed);
 
+        //FIXME
         double percentPassed = (countPassed / countScores);
         if (countScores != 0) {
             System.out.println(decimalFormat.format(percentPassed) + " of the class passed the test.");
