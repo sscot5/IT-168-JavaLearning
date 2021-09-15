@@ -1,5 +1,6 @@
 package Classwork;
 import java.util.Scanner;
+
 public class ClassWork {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
@@ -51,5 +52,64 @@ public class ClassWork {
           default:
               System.out.print("More");
         }
+        System.out.print("Enter the code: ");
+        int code = scanner.nextInt();
+        double discount;
+        switch (code) {
+            case 1:
+                discount = 0;
+                break;
+            case 3:
+                discount = 0.15;
+                break;
+            case 7: 
+                discount = 0.1;
+                break;
+            case 8:
+                discount = 0.3;
+                break;
+            case 12:
+                discount = 0.4;
+                break;
+            default:
+                System.out.println("This is not a valid code.");
+                break;
+        }
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.print("Please enter your tax code: ");
+        String tax = scanner.next();
+        System.out.print("Enter the purchase amount: ");
+        double purchase = scanner.nextDouble();
+        
+        String taxCode = tax.toUpperCase();
+        double total;
+        double salesTax = 0;
+        double saleTaxAmount;
+
+        switch (taxCode) {
+            case "A": 
+            break;
+
+            case "B":
+            salesTax = 0.03;
+            saleTaxAmount = purchase * salesTax;
+            break;
+
+            case "C":
+            salesTax = 0.05;
+            saleTaxAmount = purchase * salesTax;
+            break; 
+
+            case "H":
+            salesTax = 0.07;
+            saleTaxAmount = purchase * salesTax;
+            break;
+
+            default:
+            System.out.println("Error in tax code");
+            purchase = 0;
+        }
+        //System.out.println("Name: " + name + " Purchase amount: " + purchase + " Sales tax: " + salesTax + "Sales tax total: " + saleTaxAmount +  " Total: " + total);
     }
 }
