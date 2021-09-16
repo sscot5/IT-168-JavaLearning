@@ -1,11 +1,4 @@
-/**
- * Author: Stephanie Scott
- *
- * chapter three programming activity 3.16 pages 147-150
- *
- * Date: 7/19/21
- *
- */
+
 
  import java.text.DecimalFormat;
  import java.util.Scanner;

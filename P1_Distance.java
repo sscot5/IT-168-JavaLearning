@@ -47,5 +47,5 @@ public class P1_Distance {
 
     // display the distance formatted with only two decimal spaces
     System.out.println("The distance of (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ") is " + decimalFormat.format(distance) + ".");
-    }
+  }
 }

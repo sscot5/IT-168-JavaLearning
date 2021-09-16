@@ -1,8 +1,4 @@
-package loopsCh6;
-/*
- * Author: Stephanie Scott
- * Date: 9/14/21
- */
+
 
 /**
  * Description: An addition calculator

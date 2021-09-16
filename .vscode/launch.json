@@ -6,10 +6,16 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch CountingItems",
+            "name": "Launch WhileCalAverage",
             "request": "launch",
-            "mainClass": "loopsCh6.CountingItems",
+            "mainClass": "WhileCalAverage",
             "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
         },
         {
             "type": "java",
@@ -20,142 +26,10 @@
         },
         {
             "type": "java",
-            "name": "Launch L4_Payroll",
+            "name": "Launch ArrayFavFood",
             "request": "launch",
-            "mainClass": "L4_Payroll",
+            "mainClass": "ArrayFavFood",
             "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch Payroll",
-            "request": "launch",
-            "mainClass": "Payroll",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch WebsiteDetermination",
-            "request": "launch",
-            "mainClass": "WebsiteDetermination",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch NumberComparison",
-            "request": "launch",
-            "mainClass": "NumberComparison",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch SaleCommission",
-            "request": "launch",
-            "mainClass": "SaleCommission",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch ClassWork",
-            "request": "launch",
-            "mainClass": "ClassWork",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch CupcakeCal",
-            "request": "launch",
-            "mainClass": "CupcakeCal",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch Distance",
-            "request": "launch",
-            "mainClass": "Distance",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch UserSecretCode",
-            "request": "launch",
-            "mainClass": "UserSecretCode",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch DateFormat",
-            "request": "launch",
-            "mainClass": "DateFormat",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch SecondsToHours",
-            "request": "launch",
-            "mainClass": "SecondsToHours",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch CostOfGasForTrip",
-            "request": "launch",
-            "mainClass": "CostOfGasForTrip",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch MilesPerGallon",
-            "request": "launch",
-            "mainClass": "MilesPerGallon",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch NewProject",
-            "request": "launch",
-            "mainClass": "NewProject",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch ConvertToChange",
-            "request": "launch",
-            "mainClass": "ConvertToChange",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch MoneyConversion",
-            "request": "launch",
-            "mainClass": "MoneyConversion",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch Mortgage",
-            "request": "launch",
-            "mainClass": "Mortgage",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch MetricWeight",
-            "request": "launch",
-            "mainClass": "MetricWeight",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch PracticeMethodCh3",
-            "request": "launch",
-            "mainClass": "PracticeMethodCh3",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
         },
         {
             "type": "java",
@@ -194,6 +68,20 @@
         },
         {
             "type": "java",
+            "name": "Launch ConvertToChange",
+            "request": "launch",
+            "mainClass": "ConvertToChange",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountingItems",
+            "request": "launch",
+            "mainClass": "CountingItems",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch ExplicitTypeCasting",
             "request": "launch",
             "mainClass": "ExplicitTypeCasting",
@@ -201,9 +89,9 @@
         },
         {
             "type": "java",
-            "name": "Launch FifthProgram",
+            "name": "Launch ForLoop",
             "request": "launch",
-            "mainClass": "FifthProgram",
+            "mainClass": "ForLoop",
             "projectName": "helloworld_7fa07f23"
         },
         {
@@ -222,9 +110,100 @@
         },
         {
             "type": "java",
+            "name": "Launch L3_CostOfGasForTrip",
+            "request": "launch",
+            "mainClass": "L3_CostOfGasForTrip",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L3_MilesPerGallon",
+            "request": "launch",
+            "mainClass": "L3_MilesPerGallon",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L4_Payroll",
+            "request": "launch",
+            "mainClass": "L4_Payroll",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L4_SecondsToHours",
+            "request": "launch",
+            "mainClass": "L4_SecondsToHours",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L5_NumberComparison",
+            "request": "launch",
+            "mainClass": "L5_NumberComparison",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L5_SaleCommission",
+            "request": "launch",
+            "mainClass": "L5_SaleCommission",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L5_WebsiteDetermination",
+            "request": "launch",
+            "mainClass": "L5_WebsiteDetermination",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch MetricLength",
             "request": "launch",
             "mainClass": "MetricLength",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch MetricWeight",
+            "request": "launch",
+            "mainClass": "MetricWeight",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoneyConversion",
+            "request": "launch",
+            "mainClass": "MoneyConversion",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mortgage",
+            "request": "launch",
+            "mainClass": "Mortgage",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch P1_Distance",
+            "request": "launch",
+            "mainClass": "P1_Distance",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch P1_UserSecretCode",
+            "request": "launch",
+            "mainClass": "P1_UserSecretCode",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch P2_CupcakeCal",
+            "request": "launch",
+            "mainClass": "P2_CupcakeCal",
             "projectName": "helloworld_7fa07f23"
         },
         {
@@ -236,9 +215,9 @@
         },
         {
             "type": "java",
-            "name": "Launch Problem44",
+            "name": "Launch RadiusCalArea",
             "request": "launch",
-            "mainClass": "Problem44",
+            "mainClass": "RadiusCalArea",
             "projectName": "helloworld_7fa07f23"
         },
         {
@@ -257,13 +236,6 @@
         },
         {
             "type": "java",
-            "name": "Launch ShawnsStuff",
-            "request": "launch",
-            "mainClass": "ShawnsStuff",
-            "projectName": "helloworld_7fa07f23"
-        },
-        {
-            "type": "java",
             "name": "Launch StringConcatenation",
             "request": "launch",
             "mainClass": "StringConcatenation",
@@ -275,6 +247,19 @@
             "request": "launch",
             "mainClass": "TempConversions",
             "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhileLoop",
+            "request": "launch",
+            "mainClass": "WhileLoop",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch Payroll",
+            "request": "launch",
+            "mainClass": "edu.ilstu.Payroll"
         }
     ]
 }
