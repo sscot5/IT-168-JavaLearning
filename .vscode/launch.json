@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LoopCondition",
+            "request": "launch",
+            "mainClass": "LoopCondition",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinomialProb",
+            "request": "launch",
+            "mainClass": "BinomialProb",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch L5_WebDetermination",
             "request": "launch",
             "mainClass": "L5_WebDetermination",
