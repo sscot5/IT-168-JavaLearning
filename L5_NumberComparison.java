@@ -17,13 +17,13 @@ public class L5_NumberComparison {
     
     // generate a random number between 1 and 200
     Random randomNumber = new Random();
-    int start = 1;
-    int end = 200;
-    int num1 = randomNumber.nextInt(end - start + 1) + start;
+    final int START = 1;
+    final int END = 200;
+    int num1 = randomNumber.nextInt((END) + START);
     System.out.println("Random number: " + num1);
     
     Random randomNum2 = new Random();
-    int num2 = randomNum2.nextInt(end - start + 1) + start;
+    int num2 = randomNum2.nextInt((END) + START);
 
     if (num1 % 2 == 0){
         System.out.println("The number " + num1 + " is even.");

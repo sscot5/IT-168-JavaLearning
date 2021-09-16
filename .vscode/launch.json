@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch L5_WebDetermination",
+            "request": "launch",
+            "mainClass": "L5_WebDetermination",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComputeCommission",
+            "request": "launch",
+            "mainClass": "ComputeCommission",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch L5_Debugger",
+            "request": "launch",
+            "mainClass": "L5_Debugger",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch WhileCalAverage",
             "request": "launch",
             "mainClass": "WhileCalAverage",
