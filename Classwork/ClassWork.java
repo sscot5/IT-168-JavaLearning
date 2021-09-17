@@ -1,9 +1,9 @@
 // package Classwork;
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// public class ClassWork {
-//     private static Scanner scanner = new Scanner(System.in);
-//     public static void main(String[] args) {
+ public class ClassWork {
+    private static Scanner scanner = new Scanner(System.in);
+     public static void main(String[] args) {
 //         double classAverage = 90;
 //         double examAverage = 76;
 
@@ -111,5 +111,24 @@
 //             purchase = 0;
 //         }
 //         //System.out.println("Name: " + name + " Purchase amount: " + purchase + " Sales tax: " + salesTax + "Sales tax total: " + saleTaxAmount +  " Total: " + total);
-//     }
-// }
+//     
+        int counter = 1;
+        System.out.print("Enter how many values: ");
+        int numValues = scanner.nextInt();
+        System.out.print("Enter first number: ");
+        int smallest = scanner.nextInt();
+
+        while (counter < numValues) {
+            System.out.print("Enter next number: ");
+            int number = scanner.nextInt();
+                if (smallest > number) {
+                    smallest = number;
+                } 
+            counter++;
+        }
+        System.out.println("The smallest number is " + smallest);
+    }
+
+
+
+ }

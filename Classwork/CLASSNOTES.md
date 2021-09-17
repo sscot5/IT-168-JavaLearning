@@ -208,3 +208,18 @@ endless loops or infinite loops
 : - because the condition always evaluates to true the loop body is executed repeatedly, without end. The program will not terminate.
 : - ***Loop update statement*** --> inclueded in the loop body. It appropriately changes the variable that is being tested by the loop condition to ensure that the condition eventually results in false.
 
+9/17/21
+Pseudocode with Loops
+: - get number of events entered from user
+: - set counter to one
+: - ask for first value
+: - read smallest from user
+: - WHILE counter is less than number of events DO
+: -     Ask for value
+: -     read number from user
+: -     IF  smallest is greater than number THEN
+: -         set smallest to number
+: - END IF
+: - add one to counter
+: - END WHILE
+: - print the smallest number
