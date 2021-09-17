@@ -8,15 +8,13 @@ import java.util.Scanner;
 
 /**
  * Program to calculate the commission on a sale
- * 
+ *
  * @author Mary Elaine Califf and
  *
  */
-public class L5_Debugger
-{
+public class L5_Debugger {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// constants
 		final double LOW_COMMISSION_RATE = 0.05;
 		final double HIGH_COMMISSION_RATE = 0.075;
@@ -39,14 +37,12 @@ public class L5_Debugger
 
 		System.out.print("Please enter the total sale amount: ");
 		totalSaleAmount = keyboard.nextInt();
-
+		keyboard.close();
 		// determine base commission
-		if (totalSaleAmount < 5000) //fixed the greater than to less than
+		if (totalSaleAmount < 5000) // fixed the greater than to less than
 		{
 			commissionAmount = totalSaleAmount * LOW_COMMISSION_RATE;
-		}
-		else
-		{
+		} else {
 			commissionAmount = totalSaleAmount * HIGH_COMMISSION_RATE;
 		}
 
@@ -61,8 +57,7 @@ public class L5_Debugger
 
 		System.out.print("The total commission earned is ");
 		System.out.println(formatter.format(commissionAmount));
-		if (bonusReceived)
-		{
+		if (bonusReceived) {
 			System.out.print("This includes a bonus of ");
 			System.out.println(formatter.format(BONUS_AMOUNT));
 		}
