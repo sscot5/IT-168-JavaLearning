@@ -17,10 +17,10 @@ public class L6_VendingMachine {
         Scanner scanner = new Scanner(System.in);
 
         // constants
-        final int DOLLAR = 100;
-        final int QUARTER = 25;
-        final int DIME = 10;
-        final int NICKEL = 5;
+        // final int DOLLAR = 100;
+        // final int QUARTER = 25;
+        // final int DIME = 10;
+        // final int NICKEL = 5;
 
         // Get the price of the item from the vending machine
         System.out.println("Item price must be 25 cents to a dollar, in 5-cent increments.");
@@ -29,11 +29,21 @@ public class L6_VendingMachine {
 
         // they always give a dollar
         // calculate change
-        int change = DOLLAR - itemPrice;
+        //int change = DOLLAR - itemPrice;
 
-        // switch or nested if/else statements?
-        // change / quarters = # of quarters
-        // change % quarters = remAfterQuarters
+        if (itemPrice == 25) {
+            System.out.println("You bought an item for " + itemPrice + " cents and gave me a dollar" + "\nYour change is \n3 quarters");
+        } else if (itemPrice == 30) {
+            System.out.println("You bought an item for " + itemPrice + " cents and gave me a dollar" + "\nYour change is \n2 quarters \n2 dimes");
+        } else if (itemPrice == 35) {
+            System.out.println("You bought an item for " + itemPrice + " cents and gave me a dollar" + "\nYour change is \n2 quarters \n1 dime \n1 nickel");
+        } else if (itemPrice == 40) {
+            System.out.println("You bought an item for " + itemPrice + " cents and gave me a dollar" + "\nYour change is 2 quarters \n1 dime");
+        } else if (itemPrice == 45) {
+            System.out.println("You bought an item for " + itemPrice + " cents and gave me a dollar" + "\nYour change is \n2 quarters \n1 nickel");
+        } else if (itemPrice == 50) {
+            System.out.println("You bought an item for " + itemPrice + " cents and gave me a dollar" + "\nYour change is \n2 quarters");
+        }
 
         // remAfterQuarters / dimes = # of dimes
         // remAfterQuarters % dimes = remAfterDimes
