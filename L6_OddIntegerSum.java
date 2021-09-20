@@ -23,14 +23,17 @@
         int n = scanner.nextInt();
         scanner.close();
         int oddSum = 0;
-        int i = 1;
+        int count = 0;
+        int currentNumber = 1;
        
-        while (i <= (n * 2)) {
-            oddSum = oddSum + i;
-                if (i % 2 != 0) {
-                     System.out.print(i + " + ");   //FIXME 
-                }
-            i = i + 2;
+        while (count < n) {
+            oddSum = oddSum + currentNumber;
+            System.out.print(currentNumber);
+            if (count != n - 1) {
+                System.out.print(" + "); 
+            } 
+            currentNumber += 2;
+            count++;
         }
         System.out.println(" = " + oddSum);
     }
