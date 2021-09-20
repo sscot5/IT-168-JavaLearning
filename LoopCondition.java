@@ -7,7 +7,7 @@
  * Description: A program that takes an order from a menu and calculates the cost of the order.
  */
 
- // imports
+// imports
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -17,10 +17,10 @@ public class LoopCondition {
         DecimalFormat pricePattern = new DecimalFormat("$0.00");
 
         String menu = "\tC Cheeseburger: $7.49";
-                menu += "\n\tH Hot dog: $6.99";
-                menu += "\n\tL Lemonade: $2.50";
-                menu += "\n\tT Iced tea: $2.75";
-        
+        menu += "\n\tH Hot dog: $6.99";
+        menu += "\n\tL Lemonade: $2.50";
+        menu += "\n\tT Iced tea: $2.75";
+
         double orderCost = 0;
 
         System.out.println("Welcome to Bonnie's Burgers. \n Select from our menu.");
@@ -58,6 +58,7 @@ public class LoopCondition {
             System.out.print("\nOrder another item or \"S\" to stop: ");
             option = scanner.next().charAt(0);
         }
+        scanner.close();
         System.out.println("\nTotal order cost is: " + pricePattern.format(orderCost));
-    }    
+    }
 }

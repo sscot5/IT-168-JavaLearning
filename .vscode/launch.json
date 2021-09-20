@@ -9,6 +9,13 @@
             "name": "Launch L6_VendingMachine",
             "request": "launch",
             "mainClass": "L6_VendingMachine",
+            "projectName": "IT-168-JavaLearning_d2ae3f19"
+        },
+        {
+            "type": "java",
+            "name": "Launch L6_VendingMachine",
+            "request": "launch",
+            "mainClass": "L6_VendingMachine",
             "projectName": "helloworld_7fa07f23"
         },
         {
