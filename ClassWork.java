@@ -1,9 +1,9 @@
-// // package Classwork;
-// import java.util.Scanner;
 
-//  public class ClassWork {
-//     private static Scanner scanner = new Scanner(System.in);
-//      public static void main(String[] args) {
+ //import java.util.Scanner;
+
+ public class ClassWork {
+   //  private static Scanner scanner = new Scanner(System.in);
+     public static void main(String[] args) {
 // //         double classAverage = 90;
 // //         double examAverage = 76;
 
@@ -129,6 +129,23 @@
 //         System.out.println("The smallest number is " + smallest);
 //     }
 
+    // final int SENTINAL = -99;
+    // System.out.print("Enter payroll amounts or -99 to stop: ");
+    // int payrollAmounts = scanner.nextInt();
+    // int total = 0;
+    // while (payrollAmounts != SENTINAL) {
+    //     total = total + payrollAmounts; 
+    //     System.out.print("Enter next payroll amount or -99 to stop: ");
+    //     payrollAmounts = scanner.nextInt();
+    // }
+    // scanner.close();
+    // System.out.println("The total amount for payroll is: " + total);
 
-
-//  }
+    int i = 1;
+    int total = 0;
+    while (i <= 10){
+        total = total + i;
+        i++;
+    }
+  }
+}
