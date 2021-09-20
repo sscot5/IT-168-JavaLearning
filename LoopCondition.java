@@ -27,6 +27,7 @@ public class LoopCondition {
         System.out.println(menu);
         System.out.print("Order an item or \"S\" to stop: ");
         char option = scanner.next().charAt(0);
+        scanner.close();
 
         while (option != 'S' && option != 's') {
             switch (option) {

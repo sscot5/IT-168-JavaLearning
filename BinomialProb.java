@@ -24,7 +24,7 @@ public class BinomialProb {
         int n = scanner.nextInt();
         System.out.print("Enter the probability of success: ");
         double p = scanner.nextDouble();
-       
+       scanner.close();
 
         // calculate mean (n * p)
         double mean = n * p;

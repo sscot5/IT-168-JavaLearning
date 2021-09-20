@@ -19,6 +19,7 @@ public class P2_CupcakeCal {
     private static Scanner scanner = new Scanner(System.in);
     private static DecimalFormat decimalFormat = new DecimalFormat("$#0.00");
     private static DecimalFormat percentPattern = new DecimalFormat("0.#%");
+    
     public static void main(String[] args) {
     
     // constants

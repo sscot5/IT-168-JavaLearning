@@ -20,7 +20,8 @@ public class L5_WebDetermination {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the website: ");
         String website = scanner.nextLine();
-
+        scanner.close();
+        
         int lastDotIndex =website.lastIndexOf('.');
         String endOfWebsite = website.substring(lastDotIndex + 1);
         System.out.println(endOfWebsite);

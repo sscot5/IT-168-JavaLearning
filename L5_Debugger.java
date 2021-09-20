@@ -39,7 +39,8 @@ public class L5_Debugger
 
 		System.out.print("Please enter the total sale amount: ");
 		totalSaleAmount = keyboard.nextInt();
-
+		keyboard.close();
+		
 		// determine base commission
 		if (totalSaleAmount < 5000) //fixed the greater than to less than
 		{
