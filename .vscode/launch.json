@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SimpleDate",
+            "request": "launch",
+            "mainClass": "SimpleDate",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch L6_OddIntegerSum",
             "request": "launch",
             "mainClass": "L6_OddIntegerSum",
