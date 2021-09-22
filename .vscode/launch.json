@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ClassForLoop",
+            "request": "launch",
+            "mainClass": "ClassForLoop",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch SimpleDate",
             "request": "launch",
             "mainClass": "SimpleDate",

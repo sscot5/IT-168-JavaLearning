@@ -223,3 +223,6 @@ Pseudocode with Loops
 : - add one to counter
 : - END WHILE
 : - print the smallest number
+
+9/22/21
+: - For loops are called counting loops
