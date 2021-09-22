@@ -24,9 +24,6 @@ public class ScannerWithLoop
             String stringGoal = "A";
             log("Type " + stringGoal);
             String stringTyped = scanner.nextLine();
-// = assigns a value; == checks equality (true statement); != is for "does not equal"
-// "" is for String type '' is used for char types
-            
             isIncorrectLetter = !stringGoal.equals(stringTyped);
 
             log("stringGoal: " + stringGoal);
