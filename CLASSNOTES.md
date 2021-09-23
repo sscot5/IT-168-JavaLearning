@@ -44,7 +44,7 @@ Division in Java
 : - ( ) first
 : - division, multiplication, remainder left to right
 : - then addition and subtraction left to right
-: - everything on left of assingment operator is done first example:
+: - everything on left of assingnment operator is done first example:
 ```Java
 int num = 3;
 num *= 3 + 2;
@@ -83,7 +83,7 @@ SimpleDate myDate;
 ```
 
 Constructor
-: - 
+
 : - default constructor - empty ( ), do not need to provide any information
 
 ```Java
