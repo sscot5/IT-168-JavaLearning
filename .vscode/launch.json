@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ForLoopStringPrint",
+            "request": "launch",
+            "mainClass": "ForLoopStringPrint",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
+            "name": "Launch P3_DrawingShapes",
+            "request": "launch",
+            "mainClass": "P3_DrawingShapes",
+            "projectName": "helloworld_7fa07f23"
+        },
+        {
+            "type": "java",
             "name": "Launch L6_FindErrors",
             "request": "launch",
             "mainClass": "L6_FindErrors",
