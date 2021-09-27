@@ -28,15 +28,15 @@ public class P3_DrawingShapes {
             // choice 1 -- rectangle shape
             if (num == 1) {
                 System.out.println("Let's draw a rectangle!");
-                System.out.print("Enter the number of rows: "); // needs to be read as a string
-                int rows = scanner.nextInt();
-                System.out.print("Enter the number of columns: "); // needs to be read as a string
-                int columns = scanner.nextInt();
+                System.out.print("Enter the number of rows: ");
+                int numRows = scanner.nextInt();
+                System.out.print("Enter the number of columns: ");
+                int numColumns = scanner.nextInt();
                 System.out.print("Enter the character of your choice: ");
                 String character = scanner.next();
                 
-                for (int i = 0; i < rows; i++){
-                    for (int j = 0; j < columns; j++) {
+                for (int i = 0; i < numRows; i++){
+                    for (int j = 0; j < numColumns; j++) {
                         System.out.print(character);
                     }
                     System.out.println();

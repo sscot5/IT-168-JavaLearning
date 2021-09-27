@@ -226,3 +226,12 @@ Pseudocode with Loops
 
 9/22/21
 : - For loops are called counting loops
+
+9/27/21
+
+Validating Data
+: - Ask
+: - Read
+: - While not good
+: - print error message
+: - ask and read again
