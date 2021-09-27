@@ -28,9 +28,9 @@ public class P3_DrawingShapes {
             // choice 1 -- rectangle shape
             if (num == 1) {
                 System.out.println("Let's draw a rectangle!");
-                System.out.print("Enter the number of rows: ");
+                System.out.print("Enter the number of rows: "); // needs to be read as a string
                 int rows = scanner.nextInt();
-                System.out.print("Enter the number of columns: ");
+                System.out.print("Enter the number of columns: "); // needs to be read as a string
                 int columns = scanner.nextInt();
                 System.out.print("Enter the character of your choice: ");
                 String character = scanner.next();
@@ -46,7 +46,7 @@ public class P3_DrawingShapes {
             // choice 2 -- A shape
             if (num == 2){
                 System.out.println("Let's draw an A!");
-                System.out.print("Enter an odd number between 11 and 23 to determine the size of A: ");
+                System.out.print("Enter an odd number between 11 and 23 to determine the size of A: "); // needs to be read as a string
                 int oddNum = scanner.nextInt();
 
                 if (oddNum % 2 == 0 || oddNum < 11 || oddNum > 23) { //FIXME
