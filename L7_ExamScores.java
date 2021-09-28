@@ -23,10 +23,81 @@ public class L7_ExamScores {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        final int SENTIAL = -1;
+        final String SENTIAL = "-1";
+        int numStudents = 0;
+        int minScore = 100;
+        int maxScore = 0;
+        double averageScore = 0;
+        int numOfAs = 0;
+        int examScoreTotal = 0;
 
-        System.out.print("Enter the first exam score: ");
-        
-        //while (scanner.nextLine(scanner.hasNext()));
+        // Validating
+        boolean enteringScores = true;
+        while (enteringScores) {
+            System.out.print("Enter exam score: ");
+            String examScoreString = scanner.nextLine();
+            int examScore;
+
+            if (examScoreString.equals(SENTIAL)) {
+                enteringScores = false;
+                continue;
+            }
+
+            // validate examScores as an int
+            boolean examScoresIsAnInt = true;
+            for (int i = 0; i < examScoreString.length(); i++) {
+                if ((int) examScoreString.charAt(i) >= 48 && (int) examScoreString.charAt(0) <= 57) {
+                    continue;
+                }
+                examScoresIsAnInt = false;
+                break;
+            }
+
+            // converting the input from a string to an integer
+            if (examScoresIsAnInt) {
+                examScore = Integer.parseInt(examScoreString);
+            } else {
+                System.out.println("Error: " + examScoreString + " is an invalid input.");
+                continue;
+            }
+
+            // once input is an int -- make sure it is between 0 and 100
+            if (examScore < 0 || examScore > 100) {
+                System.out.println("Error: " + examScore + " is an invalid input");
+                continue;
+            }
+
+            // calculate number of students
+            numStudents = numStudents + 1;
+
+            // calculate exam score totals
+            examScoreTotal = examScoreTotal + examScore;
+
+            // calculate minimum score
+            if (examScore < minScore) {
+                minScore = examScore;
+            }
+
+            // calculate maximum score
+            if (examScore > maxScore) {
+                maxScore = examScore;
+            }
+
+            // calculate number of As
+            if (examScore >= 90) {
+                numOfAs = numOfAs + 1;
+            }
+        }
+        scanner.close();
+
+        // calculate average
+        averageScore = (double) examScoreTotal / numStudents;
+
+        System.out.println("The number of students is " + numStudents);
+        System.out.println("The minimum score is " + minScore);
+        System.out.println("The maximum score is " + maxScore);
+        System.out.println("The average score is " + averageScore);
+        System.out.println("The number of students that received As is " + numOfAs);
+
     }
 }

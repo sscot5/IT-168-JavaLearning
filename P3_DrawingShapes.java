@@ -46,7 +46,7 @@ public class P3_DrawingShapes {
                     int rows;
                     int columns;
 
-                    // TODO: break apart for rows and columns to be greater than zero but less than
+                    // break apart for rows and columns to be greater than zero but less than
                     // what an int can handle
                     // validates the user provided an input
                     if (rowsString.length() == 0 || columnsString.length() == 0) {
