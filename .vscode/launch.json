@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch P3_DrawingShapes",
+            "request": "launch",
+            "mainClass": "P3_DrawingShapes",
+            "projectName": "IT-168-JavaLearning_2bc59af9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Diagonal",
+            "request": "launch",
+            "mainClass": "Diagonal",
+            "projectName": "IT-168-JavaLearning_2bc59af9"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_Shape",
+            "request": "launch",
+            "mainClass": "A_Shape",
+            "projectName": "IT-168-JavaLearning_2bc59af9"
+        },
+        {
+            "type": "java",
             "name": "Launch SampleDistribution",
             "request": "launch",
             "mainClass": "SampleDistribution",
