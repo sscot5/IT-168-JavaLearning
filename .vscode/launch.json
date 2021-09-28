@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SampleDistribution",
+            "request": "launch",
+            "mainClass": "SampleDistribution",
+            "projectName": "IT-168-JavaLearning_2bc59af9"
+        },
+        {
+            "type": "java",
             "name": "Launch ForLoopStringPrint",
             "request": "launch",
             "mainClass": "ForLoopStringPrint",
