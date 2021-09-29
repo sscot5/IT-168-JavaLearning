@@ -46,11 +46,15 @@ public class P3_DrawingShapes {
                     int rows;
                     int columns;
 
-                    // break apart for rows and columns to be greater than zero but less than
-                    // what an int can handle
-                    // validates the user provided an input
-                    if (rowsString.length() == 0 || columnsString.length() == 0) {
+                    // validates the user provided an input and it is not larger than what an int
+                    // can hold
+                    if (rowsString.length() == 0 || rowsString.length() > 1000000) {
                         System.out.println("Please enter a value for both rows and columns.");
+                        continue;
+                    }
+
+                    if (columnsString.length() == 0 || columnsString.length() > 1000000) {
+                        System.out.println("Please enter a value for columns");
                         continue;
                     }
 
@@ -96,8 +100,7 @@ public class P3_DrawingShapes {
                         character = scanner.nextLine();
                     }
 
-                    // how to handle inputs like space so it doesn't print a blank rectangle you
-                    // cannot see
+                    // how to handle inputs like space so it doesn't print a blank rectangle
                     // the ascII value 33 to 126 are printable characters
                     if (character.charAt(0) < 33 || character.charAt(0) > 126) {
                         System.out.println("\nCharacter input was invalid. Changing to default character.");
@@ -145,8 +148,8 @@ public class P3_DrawingShapes {
                         break;
                     }
 
-                    // converting the input from a string to an integer and validating that user did
-                    // not enter 0 to quit
+                    // converting the input from a string to an integer
+                    // validating that user did not enter 0 to quit
                     if (widthIsAnInt) {
                         width = Integer.parseInt(widthString);
                         if (width == 0) {

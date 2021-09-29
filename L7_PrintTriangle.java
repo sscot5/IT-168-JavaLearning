@@ -1,6 +1,6 @@
 /*
  * Author: Stephanie Scott
- * Date: 9/28/21
+ * Date: 9/30/21
  */
 
 import java.util.Scanner;
@@ -24,6 +24,12 @@ public class L7_PrintTriangle {
             System.out.print("Enter a number between 3 and 40 to determine the size of the triangle: ");
             String input = scanner.nextLine();
             int baseNum;
+
+            // validate user provided an input
+            if (input.length() == 0) {
+                System.out.println("Error: invalid input");
+                continue;
+            }
 
             // validate input as an int
             boolean inputIsAnInt = true;
