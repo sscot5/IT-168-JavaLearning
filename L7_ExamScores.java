@@ -20,7 +20,7 @@ public class L7_ExamScores {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        final String SENTIAL = "-1";
+        final String STOP = "-1";
         int numStudents = 0;
         int minScore = 100;
         int maxScore = 0;
@@ -35,11 +35,16 @@ public class L7_ExamScores {
             String examScoreString = scanner.nextLine();
             int examScore;
 
-            if (examScoreString.equals(SENTIAL)) {
+            if (examScoreString.equals(STOP)) {
                 enteringScores = false;
                 continue;
             }
 
+            // validate user provided an input
+            if (examScoreString.length() == 0) {
+                System.out.println("Please enter an exam score.");
+                continue;
+            }
             // validate examScores as an int
             boolean examScoresIsAnInt = true;
             for (int i = 0; i < examScoreString.length(); i++) {
