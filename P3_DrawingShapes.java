@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class P3_DrawingShapes {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Welcome to the drawing application!");
+        System.out.print("\nWelcome to the drawing application!");
 
         // Validating
         boolean drawing = true;
@@ -127,7 +127,7 @@ public class P3_DrawingShapes {
                 while (drawA) {
                     // get input
                     System.out.println("Let's draw an A!");
-                    System.out.print("Enter an odd number between 11 and 23 to determine the size of A: ");
+                    System.out.print("\nEnter an odd number between 11 and 23 to determine the size of A: ");
                     String widthString = scanner.nextLine();
                     int width;
 
@@ -203,6 +203,6 @@ public class P3_DrawingShapes {
             }
         }
         scanner.close();
-        System.out.println("You entered a 0. Exiting program. Goodbye");
+        System.out.println("You entered a 0. Exiting program. Goodbye!");
     }
 }
