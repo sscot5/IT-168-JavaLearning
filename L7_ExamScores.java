@@ -97,7 +97,7 @@ public class L7_ExamScores {
         System.out.println("The minimum score is " + minScore);
         System.out.println("The maximum score is " + maxScore);
         System.out.println("The average score is " + averageScore);
-        System.out.println("The number of students that received As is " + numOfAs);
+        System.out.println("The number of students that received an A is " + numOfAs);
 
     }
 }

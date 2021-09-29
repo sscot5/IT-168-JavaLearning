@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch L7_PrintTriangle",
+            "request": "launch",
+            "mainClass": "L7_PrintTriangle",
+            "projectName": "IT-168-JavaLearning_2bc59af9"
+        },
+        {
+            "type": "java",
             "name": "Launch L7_ExamScores",
             "request": "launch",
             "mainClass": "L7_ExamScores",
